@@ -31,7 +31,7 @@ const SearchPage = () => {
           })}
         </div>
       ) : (
-        <span>No Gifs Found for ${query}</span>
+        <span>No Gifs Found for {query}</span>
       )}
     </div>
   );
