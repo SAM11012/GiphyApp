@@ -163,10 +163,17 @@ const GifPage = () => {
                     @{gif?.user?.username}
                   </div>
                 </div>
-
-                <button className="ml-auto" onClick={() => {}}>
-                  <FaPaperPlane size={25} />
-                </button>
+                <div className="ml-auto flex gap-7 ">
+                  <button
+                    className=""
+                    onClick={() => setOpenModal(true)}
+                  >
+                    <FaPaperPlane size={25} />
+                  </button>
+                  <button className="" onClick={() => downloadGif(gif)}>
+                    <ImDownload size={25} />
+                  </button>
+                </div>
               </div>
               {/* -- Mobile UI -- */}
             </div>
